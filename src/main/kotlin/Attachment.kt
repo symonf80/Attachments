@@ -2,7 +2,7 @@ interface Attachment {
     val type: String
 }
 
-class AttachmentAudio(val audio: Audio) : Attachment {
+data class AttachmentAudio(val audio: Audio) : Attachment {
 
     override val type: String = "audio"
     override fun toString(): String {
@@ -11,7 +11,7 @@ class AttachmentAudio(val audio: Audio) : Attachment {
 
 }
 
-class AttachmentPhoto(val photo: Photo) : Attachment {
+data class AttachmentPhoto(val photo: Photo) : Attachment {
 
     override val type: String = "photo"
     override fun toString(): String {
@@ -19,7 +19,7 @@ class AttachmentPhoto(val photo: Photo) : Attachment {
     }
 }
 
-class AttachmentVideo(val video: Video) : Attachment {
+data class AttachmentVideo(val video: Video) : Attachment {
 
     override val type: String = "video"
     override fun toString(): String {
@@ -27,7 +27,7 @@ class AttachmentVideo(val video: Video) : Attachment {
     }
 }
 
-class AttachmentDoc(val doc: Document) : Attachment {
+data class AttachmentDoc(val doc: Document) : Attachment {
 
     override val type: String = "doc"
     override fun toString(): String {
@@ -35,7 +35,7 @@ class AttachmentDoc(val doc: Document) : Attachment {
     }
 }
 
-class AttachmentLink(val link: Link) : Attachment {
+data class AttachmentLink(val link: Link) : Attachment {
 
     override val type: String = "link"
     override fun toString(): String {
@@ -43,7 +43,7 @@ class AttachmentLink(val link: Link) : Attachment {
     }
 }
 
-class AttachmentNote(val note: Note) : Attachment {
+data class AttachmentNote(val note: Note) : Attachment {
 
     override val type: String = "note"
     override fun toString(): String {
@@ -51,7 +51,7 @@ class AttachmentNote(val note: Note) : Attachment {
     }
 }
 
-class AttachmentPoll(val poll: Poll) : Attachment {
+data class AttachmentPoll(val poll: Poll) : Attachment {
 
     override val type: String = "poll"
     override fun toString(): String {
@@ -59,7 +59,7 @@ class AttachmentPoll(val poll: Poll) : Attachment {
     }
 }
 
-class AttachmentPage(val page: Page) : Attachment {
+data class AttachmentPage(val page: Page) : Attachment {
 
     override val type: String = "page"
     override fun toString(): String {
@@ -67,7 +67,7 @@ class AttachmentPage(val page: Page) : Attachment {
     }
 }
 
-class AttachmentSticker(val sticker: Sticker) : Attachment {
+data class AttachmentSticker(val sticker: Sticker) : Attachment {
 
     override val type: String = "sticker"
     override fun toString(): String {
